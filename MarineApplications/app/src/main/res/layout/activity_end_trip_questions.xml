@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".EndTripQuestionsActivity"
+    android:background="#ffffffff">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	android:id="@+id/coordinatorLayout"
+        tools:context=".EndTripQuestionsActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/temptoolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/toolbarimage"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="25dp"
+                    android:cropToPadding="false" />
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context=".EndTripQuestionsActivity"
+            android:background="#ffffff">
+            <ScrollView
+                android:id="@+id/temp_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false">
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="750dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <!-- Login progress -->
+                    <ProgressBar
+                        android:id="@+id/login_progress"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/form_title_label_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000000"
+                        android:text="@string/endtripquestions"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/cleaningschedulecompleted"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/cleaninglabel" />
+
+                        <Spinner
+                            android:id="@+id/cleaningschedulespinner"
+                            style="@style/SignInEditText"
+                            android:entries="@array/yesnoquestion"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/wasteactioncompleted"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/wasteactionlabel" />
+
+                        <Spinner
+                            android:id="@+id/wasteactionspinner"
+                            style="@style/SignInEditText"
+                            android:entries="@array/yesnoquestion"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/prawndipcompleted"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/prawnlabel" />
+
+                        <Spinner
+                            android:id="@+id/prawndipspinner"
+                            style="@style/SignInEditText"
+                            android:entries="@array/yesnoquestion"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/calibrateofscalescompleted"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/calibratelabel" />
+
+                        <Spinner
+                            android:id="@+id/calibrateofscalesspinner"
+                            style="@style/SignInEditText"
+                            android:entries="@array/yesnoquestion"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/targetspeciescompleted"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/targetproclabel" />
+
+                        <Spinner
+                            android:id="@+id/targetspeciesspinner"
+                            style="@style/SignInEditText"
+                            android:entries="@array/yesnoquestion"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/linecaughtcompleted"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/linecaughtproclabel" />
+
+                        <Spinner
+                            android:id="@+id/linecaughtspinner"
+                            style="@style/SignInEditText"
+                            android:entries="@array/yesnoquestion"
+                            android:spinnerMode="dropdown" />
+
+                        <Button
+                            android:id="@+id/addformdatabutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/corners"
+                            android:gravity="center"
+                            android:text="@string/label_submit"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

@@ -1,0 +1,2 @@
+{"trip": {"trip_id": "", "online_trip_id": "", "start_trip_date": "", "end_trip_date": "",  "log_sheet_text": "",  "current_status": ""},
+"forms": {"whale_and_dolphin": "no","prawn_dip": "no", "slippage": "no", "incident": "no", "visitor": "no", "marine_litter": "no", "lost_gear": "no", "communication": "no", "dispatch_freezer": "no"},"questions": {"cleaning_schedule": "no","waste_action": "no","prawn_dip_procedure": "no","calibration_of_scales": "no", "target_species_fishing_procedure": "no", "line_caught_procedure": "no"}}

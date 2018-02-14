@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DashboardActivity"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".DashboardActivity">
+
+        <LinearLayout
+            android:id="@+id/connectiondisplaylinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/wifitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/wifi_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/currentwifiimage"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="20dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/ic_wifi_black_24dp"
+                android:contentDescription=""
+                android:cropToPadding="false"
+                android:gravity="left" />
+
+            <TextView
+                android:id="@+id/wifistatustext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/wifi_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mariastatustext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:gravity="right"
+                android:paddingTop="10dp"
+                android:text="@string/maria_text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/currentmariaimage"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:adjustViewBounds="false"
+                android:background="@drawable/ic_perm_scan_wifi_black_24dp"
+                android:contentDescription=""
+                android:cropToPadding="false"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/mariastatusdisplaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/maria_text_rb"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tripstatuslinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="145dp"
+            android:layout_marginTop="50dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tripstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tripdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="45dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tripnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logsheetlinear"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="145dp"
+            android:layout_marginTop="55dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/triplogsheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:labelFor="@+id/edit_logsheet"
+                android:paddingTop="10dp"
+                android:text="@string/logsheetprompt"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_logsheet"
+                style="@style/SignInEditText"
+                android:layout_width="250dp"
+                android:inputType="text"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnstarttrip"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/corners"
+                android:text="@string/string_start_trip"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tripgpslinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="103dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/gpscord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="70dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/gpsdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/gpstime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:paddingTop="10dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/temp_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="140dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="#ffffff">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#ffffff"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <TextView
+                            android:id="@+id/temperaturelayer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:text="@string/temperatureLabel"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:id="@+id/tablelinear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="110dp"
+                    android:background="#ffffff"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/tablemain"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="15"
+                        android:background="#ffffff"
+                        android:minHeight="240dp" />
+
+                    <TableLayout
+                        android:id="@+id/bilgemain"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="15"
+                        android:background="#000000"
+                        android:minHeight="100dp"
+                        android:visibility="gone" />
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="17.02"
+                        android:background="#ffffff">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:paddingBottom="20dp">
+
+                            <Button
+                                android:id="@+id/addformdatabutton"
+                                android:layout_width="200dp"
+                                android:layout_height="55dp"
+                                android:layout_gravity="top"
+                                android:layout_marginLeft="30dp"
+                                android:background="@drawable/corners"
+                                android:text="@string/newtempbtn"
+                                android:textColor="#ffffff" />
+
+                            <Button
+                                android:id="@+id/marinesightingsbtn"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginLeft="70dp"
+                                android:background="@drawable/corners"
+                                android:text="@string/marinesightings"
+                                android:textColor="#ffffff" />
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="15"
+                        android:background="#ffffff"
+                        android:stretchColumns="0,1,2"
+                        android:visibility="visible">
+
+                        <TableRow
+                            android:id="@+id/bilgerow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="#f2f2f2f2"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="0"
+                                android:text="@string/bilgetext"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/bilgeimage"
+                                android:layout_width="76dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="left"
+                                android:contentDescription="@string/downbutton" />
+
+                            <TextView
+                                android:id="@+id/baskettime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="80dp"
+                                android:gravity="right"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tankonerow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-20dp"
+                            android:background="#f2f2f2f2"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp">
+
+                            <TextView
+                                android:id="@+id/tankonetext"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="0"
+                                android:text="@string/tankonetext"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/basketimg"
+                                android:layout_width="76dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="left"
+                                android:contentDescription="@string/downbutton" />
+
+                            <TextView
+                                android:id="@+id/baskettime"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="80dp"
+                                android:gravity="right"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/pbasketrow"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:background="#f2f2f2f2"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp">
+
+                            <TextView
+                                android:id="@+id/basketnoid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="left"
+                                android:text="@string/noofbaskets"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/basketno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="left"
+                                android:text="@string/basketnofive"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/resetbasketbutton"
+                                style="?android:attr/buttonStyleSmall"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/corners"
+                                android:text="@string/btnreset"
+                                android:textColor="#ffffff"
+                                android:visibility="gone" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/phlevelrow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-20dp"
+                            android:background="#f2f2f2f2"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp">
+
+                            <TextView
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="0"
+                                android:text="@string/phleveltext"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/phlevelimg"
+                                android:layout_width="76dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="left"
+                                android:contentDescription="@string/downbutton" />
+
+                            <TextView
+                                android:id="@+id/phleveltext"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="80dp"
+                                android:gravity="right"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:textStyle="bold" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/tablelinear"
+                    android:layout_marginLeft="17dp"
+                    android:background="#ffffff"
+                    android:gravity="left"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/endcurrenttripbtn"
+                        android:layout_width="420dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="70dp"
+                        android:background="@drawable/corners"
+                        android:text="@string/string_end_trip"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/helpbtn"
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/corners"
+                        android:text="@string/helpbtn"
+                        android:textColor="#FFFFFFFF"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>					

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	
+    <group android:checkableBehavior="single">
+        <item
+		android:id="@+id/logout"
+		android:title="@string/string_log_out"
+		android:visible="false" />
+        <item
+		android:id="@+id/sync_data"
+		android:title="@string/string_sync_data"
+		android:visible="false" />
+        <item
+		android:id="@+id/start_trip"
+		android:title="@string/string_start_trip"
+		android:visible="true" />
+        <item
+		android:id="@+id/end_trip"
+		android:title="@string/string_end_trip"
+		android:visible="false" />
+        <item
+		android:id="@+id/incident_menu"
+		android:title="@string/incidenttext"
+		android:visible="false" />
+        <item
+		android:id="@+id/communication_menu"
+		android:title="@string/communicationtext"
+		android:visible="false" />
+		<item
+		android:id="@+id/lost_gear_menu"
+		android:title="@string/lostgeartext"
+		android:visible="false" />
+        <item
+		android:id="@+id/marine_litter_menu"
+		android:title="@string/marinelittertext"
+		android:visible="false" />
+        <item
+		android:id="@+id/visitor_menu"
+		android:title="@string/visitortext"
+		android:visible="false" />
+        <item
+		android:id="@+id/slippage_menu"
+		android:title="@string/slippagetext"
+		android:visible="false" />
+        <item
+		android:id="@+id/prawndip_menu"
+		android:title="@string/prawndiptext"
+		android:visible="false" />		
+        <item
+		android:id="@+id/dispatch_menu"
+		android:title="@string/dispatchtext"
+		android:visible="false" />
+        <item
+		android:id="@+id/temptable_menu"
+		android:title="@string/temptablemenulabel"
+		android:visible="false" />
+        <item
+		android:id="@+id/quality_report_menu"
+		android:title="@string/qualityreportlabel"
+		android:visible="true" />
+        <item
+		android:id="@+id/graph_menu"
+		android:title="@string/graphlabel"
+		android:visible="false" />
+	</group>
+</menu>

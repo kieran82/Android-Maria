@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DashboardActivity"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="160dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:id="@+id/tripstatuslinearLayout"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/tripstatus"
+            android:layout_marginLeft="70dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/tripdate"
+            android:layout_marginLeft="90dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/tripnumber"
+            android:layout_marginLeft="80dp"
+            android:textStyle="bold"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="160dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:id="@+id/logsheetlinear">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/logsheetprompt"
+            android:id="@+id/triplogsheet"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:paddingTop="10dp" />
+
+        <EditText
+            android:id="@+id/edit_logsheet"
+            android:completionThreshold="1"
+            android:imeOptions="actionNext"
+            android:textColor="#000000"
+            style="@style/SignInEditText"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:background="#ffffff"
+        android:id="@+id/tripgpslinearLayout"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/gpscord"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/gpsdate"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/gpstime"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ListView_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_ListView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="#ebeff2">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="490dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="#ffffff">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#ffffff"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/temperatureLabel"
+                        android:id="@+id/temperaturelayer"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingBottom="5dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:background="#f2f2f2f2"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/chilledtext"
+                        android:id="@+id/textView10"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textchilledhold"
+                        android:textStyle="bold"
+                        android:layout_marginRight="30dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="#f2f2f2f2"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/freezertext"
+                        android:id="@+id/textView101"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp" />
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textfreezerhold"
+                        android:textStyle="bold"
+                        android:layout_marginRight="30dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="#f2f2f2f2"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/blasttext"
+                        android:id="@+id/textView12"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textblastfreezer"
+                        android:textStyle="bold"
+                        android:layout_marginRight="30dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="#f2f2f2f2"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/coretemplabel"
+                        android:id="@+id/textView12"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textcoretemp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="30dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp">
+                    <Button
+                        android:layout_width="350dp"
+                        android:layout_height="45dp"
+                        android:text="@string/newtempbtn"
+                        android:id="@+id/addformdatabutton"
+                        android:background="@drawable/corners"
+                        android:textColor="#ffffff"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="top"
+                        android:layout_marginLeft="45dp" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ListView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="#ebeff2">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:id="@+id/tableLayout"
+                android:layout_marginLeft="17dp">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:paddingBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/bilgetext"
+                        android:id="@+id/bilgeelayer"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:paddingTop="10dp"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="48dp"
+                        android:gravity="right"
+                        android:id="@+id/imageView3"
+                        android:background="@drawable/correct"
+                        android:paddingBottom="5dp"
+                        android:contentDescription="@string/bilgetext"
+                        android:layout_marginRight="30dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/tankonetext"
+                        android:id="@+id/tankonetext"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <ImageView
+                        android:layout_width="76dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView4"
+                        android:background="@drawable/down"
+                        android:layout_gravity="left"
+                        android:contentDescription="downbutton" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/threefiftytime"
+                        android:id="@+id/baskettime"
+                        android:textStyle="bold"
+                        android:layout_weight="1"
+                        android:layout_marginRight="30dp"
+                        android:gravity="right" />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:background="#ffffff"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/noofbaskets"
+                        android:id="@+id/basketnoid"
+                        android:layout_marginLeft="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="@string/basketnofive"
+                        android:id="@+id/basketnoattime"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp" />
+
+                    <Button
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btnreset"
+                        android:id="@+id/resetbasketbutton"
+                        android:background="@drawable/corners"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="5dp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="170dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tableLayout"
+                android:background="#ffffff"
+                android:layout_marginLeft="17dp">
+
+                <Button
+                    android:id="@+id/marinesightingsbtn"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/marinesightings"
+                    android:background="@drawable/corners"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="30dp" />
+
+                <Button
+                    android:id="@+id/helpbtn"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/helpbtn"
+                    android:layout_below="@+id/marinesightingsbtn"
+                    android:layout_alignLeft="@+id/marinesightingsbtn"
+                    android:background="@drawable/corners"
+                    android:textColor="#FFFFFFFF" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

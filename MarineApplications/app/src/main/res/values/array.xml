@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sensors">
+        <item>1</item>
+        <item>2</item>
+         <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="incidenttype">
+        <item>Food Safety</item>
+        <item>Customer Complaints</item>
+        <item>Occupational health and Safety</item>
+        <item>Discarded Fish</item>
+        <item>Cetacean by-catch</item>
+        <item>Gear Loss</item>
+    </string-array>
+
+    <string-array name="yesnoquestion">
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+</resources>

@@ -1,0 +1,238 @@
+<resources>
+    <string name="app_name">Marine Applications</string>
+    <string name="display_name">Marine Applications</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="wifi_text">WiFi</string>
+    <string name="wifi_text_rb">RB</string>
+    <string name="wifi_text_router">Router</string>
+    <string name="maria_text">Internet</string>
+    <string name="maria_text_rb"></string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_installpage">Installing Files</string>
+    <string name="title_updatepage">Updating Files</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="string_get_wifi">Scan Wifi</string>
+    <string name="string_sync_data">Sync Data</string>
+    <string name="string_add_document">Add Document</string>
+    <string name="string_view_document">Document</string>
+    <string name="string_start_trip">Start Trip</string>
+    <string name="string_end_trip">End Trip</string>
+    <string name="string_log_out">Log Out</string>
+    <string name="string_profile_label">Profile</string>
+    <string name="connect_to_internet">Connect to the Internet</string>
+    <string name="prompt_username">username</string>
+    <string name="aditionalformstext">Aditional Forms</string>
+    <string name="whaledolphintext"><![CDATA[Whale & Dolphin]]></string>
+    <string name="incidenttext">Incident</string>
+    <string name="communicationtext">Communication</string>
+    <string name="lostgeartext">Lost Gear</string>
+    <string name="marinelittertext">Marine Litter</string>
+    <string name="prawndiptext">Prawn Dip</string>
+    <string name="logintext">Login</string>
+    <string name="visitortext">Visitor</string>
+    <string name="slippagetext">Slippage</string>
+    <string name="dispatchtext">Dispatch</string>
+    <string name="endtripquestionstext">End Trip Question</string>
+    <string name="phsensortext">PH Sensor</string>
+    <string name="temperaturetext">Temperature</string>
+    <string name="title_activity_list_wifi">ListWifiActivity</string>
+    <string name="chilledtext">Chilled Hold</string>
+    <string name="temperatureLabel">Temperature</string>
+    <string name="holdtext">Hold</string>
+    <string name="blasttext">Blast Freezer</string>
+    <string name="zerotext">0</string>
+    <string name="zerovalue">0</string>
+    <string name="freezertext">Freezer Hold</string>
+    <string name="newtempbtn">New Temperature</string>
+    <string name="bilgetext">Bilge Level:</string>
+    <string name="tankonetext">Tank 1:</string>
+    <string name="phleveltext">PH Level:</string>
+    <string name="noofbaskets">Number of Baskets:</string>
+    <string name="btnreset">Reset</string>
+    <string name="threefiftytime">3:50</string>
+    <string name="basketnofive">5</string>
+    <string name="marinesightings">Marine Sightings</string>
+    <string name="helpbtn">Help</string>
+    <string name="downbutton">downbutton</string>
+    <string name="title_activity_temperature_form">temperatureFormActivity</string>
+    <string name="datelabel">Date:</string>
+    <string name="watervolumelabel">Water Volume:</string>
+    <string name="amountusedlabel">Amount Used:</string>
+    <string name="crewresponsiblelabel">Crew Responsible:</string>
+    <string name="prawndipproductlabel">Dip Product:</string>
+    <string name="timelabel">Time:</string>
+    <string name="temperatureformlabel">Temperature Form</string>
+    <string name="send">send</string>
+    <string name="freezertype">Freezer Type</string>
+
+    <!-- AuthenticatorActivity -->
+    <string name="label_email_address">Email Address</string>
+    <string name="label_password">Password</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="message_signing_in">Signing in…</string>
+    <string name="blank_field_warning">Please populate this field</string>
+    <string name="signup_link">New to Bootstrap? &lt;a href=http://www.androidbootstrap.com>Click here&lt;/a> to learn more.</string>
+    <string name="message_bad_credentials">Email Address or Password is incorrect</string>
+    <string name="message_auth_failed">Please enter a valid password</string>
+    <string name="message_auth_failed_new_account">Please enter a valid email address &amp; password</string>
+    <string name="timer_running">Timer is running %s</string>
+    <string name="timer_is_paused">Timer is paused</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="title_timer">Timer</string>
+    <string name="home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="freezersection">Freezer Area</string>
+    <string name="label_submit">Submit</string>
+    <string name="sensornumber">Sensor No:</string>
+    <string name="error_empty_string">Can\'t be empty</string>
+    <string name="logsheetprompt">Enter Logsheet No</string>
+    <string name="tripstatus">Trip Active</string>
+    <string name="tripstatusstop">Start Trip</string>
+    <string name="whaledolphinform"><![CDATA[Whale & Dolphin Form]]></string>
+    <string name="gpslatlabel">GPS Lat:</string>
+    <string name="gpslonglabel">GPS Long:</string>
+    <string name="specieslabel">Species:</string>
+    <string name="groupsizelabel">Group Size:</string>
+    <string name="incidentformlabel">Incident Form</string>
+    <string name="incidenttypelabel">Incident Type</string>
+    <string name="incidentdetailslabel">Incident Details</string>
+    <string name="incidentactionlabel">Incident Action</string>
+    <string name="communicationformlabel">Communication Form</string>
+    <string name="title_activity_incident_form">IncidentFormActivity</string>
+    <string name="vessel_from_label">From:</string>
+    <string name="vessel_to_label">To:</string>
+    <string name="vessel_comment_label">Comment:</string>
+    <string name="title_activity_user_settings">Settings</string>
+    <string name="visitorformlabel">Visitor Form</string>
+    <string name="visitorname">Visitor Name:</string>
+    <string name="visitorreason">Reason:</string>
+    <string name="visitorcomment">Comment:</string>
+    <string name="marinelitterformlabel">Marine Litter Form</string>
+    <string name="prawndipformlabel">Prawn Dip Form</string>
+    <string name="portlabel">Port:</string>
+    <string name="quantitylabel">Quantity:</string>
+    <string name="dispatchdatelabel">Dispatch Date:</string>
+    <string name="dispatchetalabel">Dispatch ETA:</string>
+    <string name="buyerlabel">Buyer:</string>
+    <string name="dispatchformlabel">Dispatch Form</string>
+    <string name="sizelabel">Size:</string>
+    <string name="slippageformlabel">Slippage Form</string>
+    <string name="ices_sub_area_label">ICES Sub Area:</string>
+    <string name="positionlabel">Position:</string>
+    <string name="targetfisherieslabel">Target Fisheries:</string>
+    <string name="speciesslippedlabel">Species Slipped:</string>
+    <string name="slippagereasonlabel">Sample Taken:</string>
+    <string name="sampletakenlabel">Sample Taken:</string>
+    <string name="endtripquestions">End Trip Questions</string>
+    <string name="cleaningschedulecompleted">Clean Schedule - Completed</string>
+    <string name="wasteactioncompleted">Waste Action - Completed</string>
+    <string name="prawndipcompleted">Prawn Dip Procedure - Completed</string>
+    <string name="calibrateofscalescompleted">Calibration of Scales - Completed</string>
+    <string name="targetspeciescompleted">Target Species Procedure - Completed</string>
+    <string name="linecaughtcompleted">Line Caught Procedure - Completed</string>
+    <string name="temptablemenulabel">Temperature Table</string>
+    <string name="coretemplabel">Core</string>
+    <string name="lostgearlabel">Details</string>
+    <string name="title_activity_gps">GPSActivity</string>
+    <string name="gpslabel">GPS Location</string>
+    <string name="gpslonglat">GPS Coorinates:</string>
+    <string name="chilledlabel">Chilled:</string>
+    <string name="freezerlabel">Freezer:</string>
+    <string name="blastlabel">Blast:</string>
+    <string name="corelabel">Core:</string>
+    <string name="qualityreportlabel">Quality Report</string>
+    <string name="temptablelabel">Temperature Report</string>
+    <string name="rockblocklabel">Send to Rockblock</string>
+    <string name="graphlabel">Graph</string>
+    <string name="emalbuyerlabel">Buyer Email Address</string>
+    <string name="networklabel">Network</string>
+    <string name="wifilabel">Wifi</string>
+    <string name="availablelabel">Not Available</string>
+    <string name="replacementlabel">Replacemente</string>
+    <string name="notavailablelabel">N/A</string>
+    <string name="title_activity_lost_gear">LostGearActivity</string>
+    <string name="downbtn">downbutton</string>
+    <string name="title_activity_configuration">ConfigurationActivity</string>
+    <string name="title_activity_trip_temperature">TripTemperatureActivity</string>
+    <string name="input_dialog_label">Enter Wifi Password</string>
+    <string name="prawndipproducttext">Dip Product</string>
+    <string name="downbuttontext">downbutton</string>
+</resources>

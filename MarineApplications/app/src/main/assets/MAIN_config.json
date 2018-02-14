@@ -1,0 +1,442 @@
+{
+    "status": "string", 
+    "vessel": {
+        "lower_net": {
+            "modbus": [
+                {
+                    "phys_layer": "RS-485", 
+                    "parity": "8N1", 
+                    "baudrate": 38400, 
+                    "protocol": "Modbus_RTU", 
+                    "max_nodes": "245", 
+                    "id": "1", 
+                    "port_test": "/dev/ttyUSB0", 
+                    "timeout": "1", 
+                    "cycle_time": 2, 
+                    "nodes": [
+                        {
+                            "node_data": {
+                                "default_settings": {
+                                    "def_id": 1, 
+                                    "id_reg_address": 6, 
+                                    "def_parity": "8N1", 
+                                    "def_baudrate": 9600
+                                }, 
+                                "decimals": 1, 
+                                "product_name": "HE359THM200A", 
+                                "signed": true, 
+                                "func_code": 3
+                            }, 
+                            "error_message": "node_2_error", 
+                            "node_id": 2, 
+                            "sensors": [
+                                {
+                                    "sensor_id": 1, 
+                                    "reg_address": 14, 
+                                    "name": "core", 
+                                    "label": "IN0", 
+                                    "units": "centigrade", 
+                                    "type": "temp"
+                                }, 
+                                {
+                                    "sensor_id": 2, 
+                                    "reg_address": 15, 
+                                    "name": "blast", 
+                                    "label": "IN1", 
+                                    "units": "centigrade", 
+                                    "type": "temp"
+                                }, 
+                                {
+                                    "sensor_id": 3, 
+                                    "reg_address": 16, 
+                                    "name": "freezer", 
+                                    "label": "IN2", 
+                                    "units": "centigrade", 
+                                    "type": "temp"
+                                }, 
+                                {
+                                    "sensor_id": 4, 
+                                    "reg_address": 17, 
+                                    "name": "chill", 
+                                    "label": "IN3", 
+                                    "units": "centigrade", 
+                                    "type": "temp"
+                                }, 
+                                {
+                                    "sensor_id": 5, 
+                                    "reg_address": 18, 
+                                    "name": "", 
+                                    "label": "IN4", 
+                                    "units": "centigrade", 
+                                    "type": "temp"
+                                }, 
+                                {
+                                    "sensor_id": 6, 
+                                    "reg_address": 19, 
+                                    "name": "", 
+                                    "label": "IN5", 
+                                    "units": "centigrade", 
+                                    "type": "temp"
+                                }, 
+                                {
+                                    "sensor_id": 7, 
+                                    "reg_address": 20, 
+                                    "name": "", 
+                                    "label": "IN6", 
+                                    "units": "centigrade", 
+                                    "type": "temp"
+                                }, 
+                                {
+                                    "sensor_id": 8, 
+                                    "reg_address": 21, 
+                                    "name": "", 
+                                    "label": "IN7", 
+                                    "units": "centigrade", 
+                                    "type": "temp"
+                                }
+                            ], 
+                            "type": "temps", 
+                            "product_name": "HE359THM200A"
+                        }, 
+                        {
+                            "sensors": [
+                                {
+                                    "sensor_id": 10, 
+                                    "reg_address": 14, 
+                                    "name": "bilge_alarm", 
+                                    "label": "IN0", 
+                                    "units": "volts", 
+                                    "type": "bilge"
+                                }, 
+                                {
+                                    "sensor_id": 11, 
+                                    "reg_address": 15, 
+                                    "name": "", 
+                                    "label": "IN1", 
+                                    "units": "volts", 
+                                    "type": ""
+                                }, 
+                                {
+                                    "sensor_id": 12, 
+                                    "reg_address": 16, 
+                                    "name": "", 
+                                    "label": "IN2", 
+                                    "units": "volts", 
+                                    "type": ""
+                                }, 
+                                {
+                                    "sensor_id": 13, 
+                                    "reg_address": 17, 
+                                    "name": "", 
+                                    "label": "IN3", 
+                                    "units": "volts", 
+                                    "type": ""
+                                }, 
+                                {
+                                    "sensor_id": 14, 
+                                    "reg_address": 18, 
+                                    "name": "", 
+                                    "label": "IN4", 
+                                    "units": "volts", 
+                                    "type": ""
+                                }, 
+                                {
+                                    "sensor_id": 15, 
+                                    "reg_address": 19, 
+                                    "name": "", 
+                                    "label": "IN5", 
+                                    "units": "volts", 
+                                    "type": ""
+                                }, 
+                                {
+                                    "sensor_id": 16, 
+                                    "reg_address": 20, 
+                                    "name": "", 
+                                    "label": "IN6", 
+                                    "units": "volts", 
+                                    "type": ""
+                                }, 
+                                {
+                                    "sensor_id": 17, 
+                                    "reg_address": 21, 
+                                    "name": "", 
+                                    "label": "IN7", 
+                                    "units": "volts", 
+                                    "type": ""
+                                }
+                            ], 
+                            "node_id": 3, 
+                            "type": "0v10", 
+                            "node_data": {
+                                "signed": false, 
+                                "default_settings": {
+                                    "def_id": 1, 
+                                    "id_reg_address": 6, 
+                                    "def_parity": "8N1", 
+                                    "def_baudrate": 9600
+                                }, 
+                                "signal_type": "ADC;0-10V", 
+                                "decimals": 3, 
+                                "product_name": "HE359ADC207B", 
+                                "func_code": 3
+                            }, 
+                            "error_message": "node_3_error"
+                        }, 
+                        {
+                            "sensors": [
+                                {
+                                    "sensor_id": 18, 
+                                    "reg_address": 1, 
+                                    "name": "dips_counter_1", 
+                                    "no_registers": 2, 
+                                    "label": "IN0", 
+                                    "units": "counts", 
+                                    "type": "counter"
+                                }, 
+                                {
+                                    "sensor_id": 19, 
+                                    "reg_address": 3, 
+                                    "name": "", 
+                                    "no_registers": 2, 
+                                    "label": "IN1", 
+                                    "units": "counts", 
+                                    "type": "counter"
+                                }, 
+                                {
+                                    "sensor_id": 20, 
+                                    "reg_address": 5, 
+                                    "name": "", 
+                                    "no_registers": 2, 
+                                    "label": "IN2", 
+                                    "units": "counts", 
+                                    "type": "counter"
+                                }, 
+                                {
+                                    "sensor_id": 21, 
+                                    "reg_address": 7, 
+                                    "name": "", 
+                                    "no_registers": 2, 
+                                    "label": "IN3", 
+                                    "units": "counts", 
+                                    "type": "counter"
+                                }, 
+                                {
+                                    "sensor_id": 22, 
+                                    "reg_address": 9, 
+                                    "name": "", 
+                                    "no_registers": 2, 
+                                    "label": "IN4", 
+                                    "units": "counts", 
+                                    "type": "counter"
+                                }, 
+                                {
+                                    "sensor_id": 23, 
+                                    "reg_address": 11, 
+                                    "name": "", 
+                                    "no_registers": 2, 
+                                    "label": "IN5", 
+                                    "units": "counts", 
+                                    "type": "counter"
+                                }, 
+                                {
+                                    "sensor_id": 24, 
+                                    "reg_address": 13, 
+                                    "name": "", 
+                                    "no_registers": 2, 
+                                    "label": "IN6", 
+                                    "units": "counts", 
+                                    "type": "counter"
+                                }, 
+                                {
+                                    "sensor_id": 25, 
+                                    "reg_address": 15, 
+                                    "name": "", 
+                                    "no_registers": 2, 
+                                    "label": "IN7", 
+                                    "units": "counts", 
+                                    "type": "counter"
+                                }
+                            ], 
+                            "node_id": 4, 
+                            "type": "counter", 
+                            "node_data": {
+                                "signed": false, 
+                                "default_settings": {
+                                    "forced_id": 255, 
+                                    "def_id": 254, 
+                                    "id_reg_address": 32, 
+                                    "def_parity": "8N1", 
+                                    "def_baudrate": 9600
+                                }, 
+                                "signal_type": "Bool 0-24V", 
+                                "decimals": 0, 
+                                "product_name": "Simex-SLI-8", 
+                                "func_code": 3
+                            }, 
+                            "error_message": "node_4_error"
+                        }, 
+                        {
+                            "sensors": [
+                                {
+                                    "dec_shift_val": 1, 
+                                    "data_source": {
+                                        "network_id": "1", 
+                                        "source_register": 14, 
+                                        "node_id": 2
+                                    }, 
+                                    "reg_address": 2, 
+                                    "name": "core", 
+                                    "label": "14:A+,15:B-", 
+                                    "sensor_id": 9, 
+                                    "units": null, 
+                                    "dec_shift_add": 3, 
+                                    "type": "display"
+                                }
+                            ], 
+                            "node_id": 1, 
+                            "type": "display", 
+                            "node_data": {
+                                "signed": true, 
+                                "default_settings": {
+                                    "id_address": "1", 
+                                    "parity": "8N1", 
+                                    "baudrate": "38400", 
+                                    "id": 1
+                                }, 
+                                "signal_type": "RS-485", 
+                                "decimals": 0, 
+                                "product_name": "Simex_Display", 
+                                "func_code": 6
+                            }, 
+                            "error_message": "node_1_error"
+                        }
+                    ], 
+                    "port": "/dev/ttyUSB0"
+                }
+            ], 
+            "sensor_id's": [
+                1, 
+                2, 
+                3, 
+                4, 
+                5, 
+                6, 
+                7, 
+                8, 
+                9, 
+                10, 
+                11, 
+                12, 
+                13, 
+                14, 
+                15, 
+                16, 
+                17, 
+                18, 
+                19, 
+                20, 
+                21, 
+                22, 
+                23, 
+                24, 
+                25, 
+                26, 
+                27, 
+                28, 
+                29
+            ], 
+            "RPI.GPIO": {
+                "sensors": [
+                    {
+                        "sensor_id": 26, 
+                        "reg_address": "GPIO_4", 
+                        "name": "timer_start", 
+                        "label": "BOARD_PIN_7", 
+                        "units": "bool_in", 
+                        "type": "push_button"
+                    }, 
+                    {
+                        "sensor_id": 27, 
+                        "reg_address": "GPIO_17", 
+                        "name": "timer_stop", 
+                        "label": "BOARD_PIN_11", 
+                        "units": "bool_in", 
+                        "type": "button"
+                    }, 
+                    {
+                        "sensor_id": 28, 
+                        "reg_address": "GPIO_27", 
+                        "name": "dip", 
+                        "label": "BOARD_PIN_13", 
+                        "units": "bool_out", 
+                        "type": "light"
+                    }, 
+                    {
+                        "sensor_id": 29, 
+                        "reg_address": "GPIO_22", 
+                        "name": "timer_start", 
+                        "label": "BOARD_PIN_15", 
+                        "units": "bool", 
+                        "type": "button"
+                    }
+                ]
+            }
+        }, 
+        "system_set": "set", 
+        "name": "Original_Vessel_Name", 
+        "settings": {
+            "rock_block": null, 
+            "rock_block_template_file": "Internal_DB_interface.json", 
+            "internet": null, 
+            "time_source": "network", 
+            "read_fields_template_file": "read_fields_template_Internet.json", 
+            "system_scan_interval_(sec)": 1, 
+            "trip_state_template_file": "trip_state_template.json", 
+            "gps": null
+        }, 
+        "id": "Vessel_id_from_data_base", 
+        "upper_net": {
+            "wi_fi": {
+                "network": {
+                    "gateway": "xxx.xxx.xxx.xxx", 
+                    "pw": "password", 
+                    "name": "network_name", 
+                    "my_ip": "xxx.xxx.xxx.xxx"
+                }
+            }, 
+            "tablet": {
+                "network": {
+                    "name": "tablet_name", 
+                    "gateway": "xxx.xxx.xxx.xxx", 
+                    "tablet_ip": "xxx.xxx.xxx.xxx", 
+                    "pw": "password"
+                }, 
+                "present": false
+            }, 
+            "rock-block": {
+                "ex_module": "rockBlock.py", 
+                "network": {
+                    "phys_layer": "USB/RS232", 
+                    "parity": "8N1", 
+                    "baudrate": "19200", 
+                    "protocol": "AT+", 
+                    "timeout": "5", 
+                    "port": "/dev/ttyUSB1"
+                }, 
+                "id": 1
+            }, 
+            "time_source": "network", 
+            "gps_unit": {
+                "id": 1, 
+                "network": {
+                    "phys_layer": "USB_TTL", 
+                    "parity": "8N1", 
+                    "baudrate": "9600", 
+                    "protocol": "AT+", 
+                    "timeout": "1", 
+                    "port": "/dev/ttyAMA0"
+                }
+            }
+        }
+    }
+}
